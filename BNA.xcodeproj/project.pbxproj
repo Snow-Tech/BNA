@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		CF89676726B462F6007FB4F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89676626B462F6007FB4F7 /* AppDelegate.swift */; };
 		CF89676926B462F6007FB4F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89676826B462F6007FB4F7 /* SceneDelegate.swift */; };
-		CF89676B26B462F6007FB4F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89676A26B462F6007FB4F7 /* ViewController.swift */; };
 		CF89676E26B462F6007FB4F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF89676C26B462F6007FB4F7 /* Main.storyboard */; };
 		CF89677126B462F6007FB4F7 /* BNA.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CF89676F26B462F6007FB4F7 /* BNA.xcdatamodeld */; };
 		CF89677326B462F9007FB4F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF89677226B462F9007FB4F7 /* Assets.xcassets */; };
 		CF89677626B462F9007FB4F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF89677426B462F9007FB4F7 /* LaunchScreen.storyboard */; };
+		CF89678726B46F48007FB4F7 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89678626B46F48007FB4F7 /* UIImage+Extension.swift */; };
+		CF89678B26B46FA1007FB4F7 /* CustomNavBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89678A26B46FA1007FB4F7 /* CustomNavBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CF89676326B462F6007FB4F7 /* BNA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BNA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF89676626B462F6007FB4F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF89676826B462F6007FB4F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CF89676A26B462F6007FB4F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CF89676D26B462F6007FB4F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF89677026B462F6007FB4F7 /* BNA.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BNA.xcdatamodel; sourceTree = "<group>"; };
 		CF89677226B462F9007FB4F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CF89677526B462F9007FB4F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF89677726B462F9007FB4F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF89678626B46F48007FB4F7 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		CF89678A26B46FA1007FB4F7 /* CustomNavBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,13 @@
 		CF89676526B462F6007FB4F7 /* BNA */ = {
 			isa = PBXGroup;
 			children = (
+				CF89679026B470AC007FB4F7 /* Router */,
+				CF89678F26B47069007FB4F7 /* Models */,
+				CF89678E26B47061007FB4F7 /* Views */,
+				CF89678D26B47058007FB4F7 /* Controllers */,
+				CF89678526B46F2E007FB4F7 /* Helpers */,
 				CF89676626B462F6007FB4F7 /* AppDelegate.swift */,
 				CF89676826B462F6007FB4F7 /* SceneDelegate.swift */,
-				CF89676A26B462F6007FB4F7 /* ViewController.swift */,
 				CF89676C26B462F6007FB4F7 /* Main.storyboard */,
 				CF89677226B462F9007FB4F7 /* Assets.xcassets */,
 				CF89677426B462F9007FB4F7 /* LaunchScreen.storyboard */,
@@ -68,6 +74,43 @@
 				CF89676F26B462F6007FB4F7 /* BNA.xcdatamodeld */,
 			);
 			path = BNA;
+			sourceTree = "<group>";
+		};
+		CF89678526B46F2E007FB4F7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CF89678626B46F48007FB4F7 /* UIImage+Extension.swift */,
+				CF89678A26B46FA1007FB4F7 /* CustomNavBarViewController.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		CF89678D26B47058007FB4F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CF89678E26B47061007FB4F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CF89678F26B47069007FB4F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CF89679026B470AC007FB4F7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF89676B26B462F6007FB4F7 /* ViewController.swift in Sources */,
 				CF89677126B462F6007FB4F7 /* BNA.xcdatamodeld in Sources */,
+				CF89678726B46F48007FB4F7 /* UIImage+Extension.swift in Sources */,
 				CF89676726B462F6007FB4F7 /* AppDelegate.swift in Sources */,
+				CF89678B26B46FA1007FB4F7 /* CustomNavBarViewController.swift in Sources */,
 				CF89676926B462F6007FB4F7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,8 +335,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2G269W7Y5N;
+				DEVELOPMENT_TEAM = BM87E2D97X;
 				INFOPLIST_FILE = BNA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,8 +355,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2G269W7Y5N;
+				DEVELOPMENT_TEAM = BM87E2D97X;
 				INFOPLIST_FILE = BNA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
